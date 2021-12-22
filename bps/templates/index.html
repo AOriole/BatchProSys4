@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Banking Transactions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}" >
+</head>
+
+<body>
+    <header>
+        <h2>Batch Processing System for Banking Transactions</h2>
+    </header><br><br>
+
+    <strong style="margin-left: 15px;">Qucik Start</strong>
+    <ol>
+        <li>Click load project</li>
+        <li>Click Upload Accounts tab & select "accounts.json" file</li>
+        <li>Click Upload Transactions tab & select "transactions.txt" file</li>
+        <li>Click Process Transaction tab to process the transactions</li>
+        <li>Click Analyse Transaction tab to visualize the transactions</li>
+    </ol>
+    <br><br>
+
+    <form action="{{ url_for('controller')}}" method="post">
+        <div>
+            <button type="submit" class="btn btn-primary "> <!--*btn-primary btn-block btn-large-->
+                Load Project</button>
+        </div>
+    </form>
+    <br><br><br><br>
+    <hr>
+    <p style="text-align: center"> Project aligned to industry: Fin-Tech</p><hr>
+    <footer>
+        <picture>
+            <source srcset="frt1.png" media="(width: 600px)">
+            <img src="static\frt1.png" alt="FRT banner">
+         </picture>
+        <p> &#169; Touseef Khan 2021</p>
+    </footer>
+</body>
+</html>
